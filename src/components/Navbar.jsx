@@ -68,7 +68,7 @@ scrollToTop()
             </Link>
           </nav>
 
-          <div>
+          <div className="menu-icon">
             <FaBars
               ref={toggleRef}
               className="menu-toggle"
