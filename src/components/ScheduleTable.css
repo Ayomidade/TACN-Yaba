@@ -61,4 +61,10 @@
     padding: 0px;
     margin: 0px;
   }
+
+  .schedule-table td {
+    padding: 10px;
+    line-height: 1.4;
+    text-align: left;
+  }
 }

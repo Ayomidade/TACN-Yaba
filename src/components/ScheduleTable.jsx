@@ -49,9 +49,7 @@ const ScheduleTable = () => {
             <td>Saturday</td>
             <td>Choir Rehearsals</td>
             <td>4:00 PM</td>
-            <td>
-              <hr />
-            </td>
+            <td>Church Auditorium</td>
           </tr>
         </tbody>
       </table>

@@ -137,21 +137,21 @@
   }
 
   .hero-title {
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 1.5px;
     margin-bottom: 0px;
     margin-top: 0px;
   }
 
   .hero-subtitle {
-    font-size: 20px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin-top: 2px;
     /* margin-bottom: 50px; */
   }
 
   .hero-motto {
     font-size: 14px;
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   .hero-divider {
@@ -173,9 +173,8 @@
 
   .hero-btn {
     padding: 10px;
-    font-size: 15px;
     border-radius: 15px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .hero-info {

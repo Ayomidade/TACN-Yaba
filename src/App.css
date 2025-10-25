@@ -68,18 +68,16 @@ nav .register-btn {
 
 .menu-toggle {
   display: none;
-  flex-direction: column;
   cursor: pointer;
 }
 
-.bar {
+/* .bar {
   height: 2px;
   width: 25px;
   background: #fff;
   margin: 4px 0;
   transition: 0.3s;
-  /* z-index: 1001; */
-}
+} */
 
 /* Countdown Styling */
 .clock {
@@ -172,7 +170,6 @@ nav .register-btn {
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 11, 41, 0.2);
   padding: 30px;
-  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,7 +225,7 @@ nav .register-btn {
 .contact-socials {
   text-align: center;
   margin-top: 40px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .contact-socials h4 {
@@ -298,12 +295,12 @@ nav .register-btn {
   justify-content: center;
 }
 
-.worship a{
+.worship a {
   text-decoration: none;
   color: var(--color-light);
 }
 
-.worship a:hover{
+.worship a:hover {
   color: var(--color-secondary);
 }
 
@@ -350,6 +347,8 @@ nav .register-btn {
   .menu-toggle {
     display: flex;
     z-index: 1001;
+    color: var(--color-light);
+    font-size: 24px;
   }
 
   .clock {
@@ -374,13 +373,14 @@ nav .register-btn {
   }
 
   .contact {
-    padding: 5px 15px;
+    padding: 0;
   }
 
   .contact-container {
     flex-direction: column;
     align-items: center;
-    /* gap: 25px; */
+    max-width: 100%;
+    margin: 0;
   }
 
   .contact-info li {
@@ -389,10 +389,10 @@ nav .register-btn {
 
   }
 
-  .contact-info,
+  /* .contact-info,
   .contact-form {
     flex: 1 1 100%;
-  }
+  } */
 
   .contact-info h2 {
     font-size: 24px;
@@ -405,6 +405,7 @@ nav .register-btn {
 
   .contact-form {
     padding: 20px 30px;
+    margin-top: 20px;
   }
 
   .contact-form h3 {
@@ -422,4 +423,9 @@ nav .register-btn {
     font-size: 20px;
   }
 
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1110;
+  }
 }

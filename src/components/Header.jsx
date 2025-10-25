@@ -4,7 +4,7 @@ import "./header.css";
 
 const Header = ({ title, subtitle, background }) => {
   return (
-    <header
+    <div
       className="header"
       style={{ backgroundImage: `url(${background})` }}
     >
@@ -12,7 +12,7 @@ const Header = ({ title, subtitle, background }) => {
         <h1>{title}</h1>
         <p>{subtitle}</p>
       </div>
-    </header>
+    </div>
   );
 };
 

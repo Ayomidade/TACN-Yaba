@@ -76,8 +76,8 @@
 /* Responsive design */
 @media (max-width: 600px) {
   .program-name {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 22px;
+    margin-bottom: 5px;
     margin-top: 0;
   }
 
@@ -85,7 +85,7 @@
     font-size: 16px;
     margin-bottom: 20px;
     letter-spacing: 0.5px;
-    margin-top: -10px;
+    margin-top: 0px;
   }
 
   .program-tagline.bottom {
@@ -93,11 +93,28 @@
   }
 
   .number {
-    font-size: 29px;
+    font-size: 22px;
   }
 
   .countdown-section {
     max-width: 600px;
     padding: 30px 25px;
+  }
+
+  .label {
+    text-transform: capitalize;
+  }
+
+  .time-box {
+    border-radius: 19px;
+    min-width: 70px;
+  }
+
+  .countdown-section {
+    background-color: rgba(0, 0, 0, 0.80);
+  }
+
+  .register-btn {
+    font-size: 14px;
   }
 }

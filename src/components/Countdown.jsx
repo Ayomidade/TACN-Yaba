@@ -52,7 +52,7 @@ const Countdown = () => {
           </div>
         </div>
         <a
-          href="https://docs.google.com/forms"
+          href="https://forms.gle/9rNKdMrkXBhBh99i9"
           target="_blank"
           rel="noopener noreferrer"
           className="register-btn"

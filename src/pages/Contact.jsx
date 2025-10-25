@@ -13,7 +13,7 @@ const Home = () => {
 
       <section className="contact">
         <div className="contact-container">
-          <div className="contact-info">
+          {/* <div className="contact-info">
             <ul>
               <li>
                 <strong>Church Name:</strong> The Apostolic Church Nigeria –
@@ -30,7 +30,7 @@ const Home = () => {
                 <strong>Phone:</strong> +234 815 420 0609
               </li>
             </ul>
-          </div>
+          </div> */}
 
           <form className="contact-form">
             <h3>Send a Message</h3>

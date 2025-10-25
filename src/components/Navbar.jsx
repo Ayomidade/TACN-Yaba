@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./theme.css";
+import { FaBars } from "react-icons/fa";
+import { useScroll } from "../context/ScrollContext";
+
 // import "./navbar.css";
 
 const Navbar = () => {
@@ -36,6 +39,12 @@ const Navbar = () => {
     };
   }, []);
 
+    const { scrollToTop } = useScroll();
+  const handleNavClick = () => {
+scrollToTop()
+    setMenuOpen(false);
+  };
+
   return (
     <>
       <header>
@@ -48,30 +57,28 @@ const Navbar = () => {
           </div>
 
           <nav ref={navRef} className={`nav ${menuOpen ? "open" : ""}`}>
-            <Link to="/" onClick={() => setMenuOpen(false)}>
+            <Link to="/" onClick={handleNavClick}>
               Home
             </Link>
-            <Link to="/programs" onClick={() => setMenuOpen(false)}>
+            <Link to="/programs" onClick={handleNavClick}>
               Programs
             </Link>
-            <Link to="/contact" onClick={() => setMenuOpen(false)}>
+            <Link to="/contact" onClick={handleNavClick}>
               Contact Us
             </Link>
           </nav>
 
-          <div
-            ref={toggleRef}
-            className="menu-toggle"
-            onClick={(e) => {
-              // stopPropagation is not strictly necessary because handler checks refs,
-              // but keeping it prevents the click from bubbling to body listeners in some edge cases
-              e.stopPropagation();
-              handleToggle();
-            }}
-          >
-            <span className="bar"></span>
-            <span className="bar"></span>
-            <span className="bar"></span>
+          <div>
+            <FaBars
+              ref={toggleRef}
+              className="menu-toggle"
+              onClick={(e) => {
+                // stopPropagation is not strictly necessary because handler checks refs,
+                // but keeping it prevents the click from bubbling to body listeners in some edge cases
+                e.stopPropagation();
+                handleToggle();
+              }}
+            />
           </div>
         </div>
       </header>

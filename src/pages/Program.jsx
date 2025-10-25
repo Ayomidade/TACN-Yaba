@@ -8,18 +8,11 @@ import Testimony from "../components/Testimony";
 const Home = () => {
   return (
     <>
-      {/* <Header
-        title="Church Programs"
-        subtitle="Faith • Fellowship • Community"
-        background="src/assets/nir-himi-lfXq-zbF-RU-unsplash.jpg"
-      /> */}
-
       <Countdown />
-
       <section
         className="program-section"
       >
-        <Testimony/>
+        {/* <Testimony/> */}
         <ScheduleTable />
       </section>
     </>

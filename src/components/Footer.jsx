@@ -3,8 +3,11 @@ import "./theme.css";
 import "./footer.css";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useScroll } from "../context/ScrollContext";
 
 const Footer = () => {
+  const { scrollToTop } = useScroll();
+
   return (
     <>
       <footer className="footer">
@@ -21,9 +24,15 @@ const Footer = () => {
           {/* Column 2 — Quick Links */}
           <div className="footer-links">
             <h4>Quick Links</h4>
-            <Link to="/">Home</Link>
-            <Link to="/programs">Programs</Link>
-            <Link to="/contact">Contact</Link>
+            <Link to="/" onClick={scrollToTop}>
+              Home
+            </Link>
+            <Link to="/programs" onClick={scrollToTop}>
+              Programs
+            </Link>
+            <Link to="/contact" onClick={scrollToTop}>
+              Contact
+            </Link>
           </div>
 
           {/* Column 3 — Contact Info */}
